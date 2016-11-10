@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title> formulaire Web</title>
+  <link rel="stylesheet" href=" formulaire.css">
+  <script type ="text/javascript" src="formulaire.js"></script>
+</head>
+<body>
+
+ <FORM method=post action="cgi-bin/script.pl">
+Enregistrement d'un utilisateur </br>
+SAISIE D'UNE FICHE "Personne"
+<div class="formulaire">
+<form action="formulaire.js" method="post">
+<TABLE BORDER=3>
+<TR>
+ <TD>Nom</TD>
+ <TD>
+ <INPUT type=text name="nom" id"nom">
+ </TD>
+</TR>
+
+<TR>
+ <TD>Prénom</TD>
+ <TD>
+ <INPUT type=text name="prenom" id"prenom">
+ </TD>
+</TR>
+<TR>
+ <TD>Date de naissance </TD>
+ <TD>
+  
+ <INPUT placeholder="JJ/MM/AAA" type=text name="Date_de_naissance" type="date" value="">
+ </TD>
+</TR>
+<TR>
+ <TD>Sexe</TD>
+ <TD>
+ Homme : <INPUT type=radio name="sexe" value="M" id"sexe">
+ <br>Femme : <INPUT type=radio name="sexe" value="F">
+ </TD>
+</TR>
+
+<TR>
+ <TD>Fonction</TD>
+ <TD>
+ <SELECT name="fonction" id"fonction">
+  <OPTION VALUE="enseignant">Enseignant</OPTION>
+  <OPTION VALUE="etudiant">Etudiant</OPTION>
+  <OPTION VALUE="ingenieur">Ingénieur</OPTION>
+  <OPTION VALUE="retraite">Retraité</OPTION>
+  <OPTION VALUE="autre">Autre</OPTION>
+ </SELECT>
+ </TD>
+</TR>
+ 
+<TR>
+ <TD>Adresse</TD>
+ <TD>
+ <INPUT type=text name="Adresse"id="Adresse">
+ </TD>
+</TR>
+<TR>
+ <TD>MAIL</TD>
+ <TD>
+ <INPUT type=text name="MAIL" id="Mail">
+ </TD>
+</TR>
+<TR>
+ <TD>Commentaires</TD>
+ <TD>
+ <TEXTAREA rows="1" name="commentaires">
+ Tapez ici vos commentaires</TEXTAREA>
+ </TD>
+</TR>
+<TR>
+ <TD COLSPAN=2>
+  
+ <INPUT type="button" value="Valider" onclick="validation();" />
+
+ </TD>
+</TR>
+   
+ 
+
+</TABLE></br>
+
+<TABLE width=100%> 
+
+<div class= "pieds_formulaire">
+
+<div id="error" >
+</div>
+<div id="result">
+</div>
+  
+ bienvenue Johny
+  </div>
+ </form>
+</div>
+</FORM>
+   
+</body>
+</html>
